@@ -29,6 +29,7 @@
 *.app
 build
 CMakeLists.txt.user
+*.autosave
 
 # Python
 .idea
