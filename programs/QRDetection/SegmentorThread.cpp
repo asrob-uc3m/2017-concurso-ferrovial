@@ -2,8 +2,6 @@
 
 #include "SegmentorThread.hpp"
 
-namespace teo
-{
 
 /************************************************************************/
 void SegmentorThread::setIKinectDeviceDriver(yarp::dev::IOpenNI2DeviceDriver *_kinect) {
@@ -184,5 +182,3 @@ void SegmentorThread::run() {
         pOutPort->write(output);
 
 }
-
-}  // namespace teo
