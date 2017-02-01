@@ -27,3 +27,12 @@
 *.exe
 *.out
 *.app
+build
+CMakeLists.txt.user
+
+# Python
+.idea
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
