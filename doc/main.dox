@@ -1,0 +1,28 @@
+/**
+  * \mainpage 2017-concurso-ferrovial Repository documentation
+
+Welcome to the 2017-concurso-ferrovial Repository documentation for the manipulation and locomotion PCs. <a class=el href="http://robots.uc3m.es">Click here to return to Wiki.</a> <a class=el href="https://github.com/roboticslab-uc3m/2017-concurso-ferrovial">Click here to see 2017-concurso-ferrovial on repo.</a>
+
+ \li \ref 2017-concurso-ferrovial_install
+
+Other internal links of interest:
+ \li \ref 2017-concurso-ferrovial_programs
+ \li \ref 2017-concurso-ferrovial_libraries
+ \li \ref 2017-concurso-ferrovial_applications
+ \li \ref 2017-concurso-ferrovial_examples
+
+Even more internal links of interest:
+ \li <a class=el href="http://robots.uc3m.es/dox-teo-main/index.html">teo-main</a>
+ \li <a class=el href="http://robots.uc3m.es/dox-teo-head/index.html">teo-head</a>
+
+External links (related projects):
+ \li <a class=el href="http://eris.liralab.it/yarpdoc/index.html">YARP doc</a> / <a class=el href="https://github.com/robotology/yarp">YARP github</a>
+ \li <a class=el href="http://eris.liralab.it/iCub/main/dox/html/index.html">iCub Software Repository Documentation</a>
+ \li <a class=el href="http://roboticslab.sourceforge.net/asibot">ASIBOT</a>
+
+<hr>
+
+This page can be edited at 2017-concurso-ferrovial/doc/main.dox.
+
+*/
+

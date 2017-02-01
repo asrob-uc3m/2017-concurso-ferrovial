@@ -1,0 +1,33 @@
+
+/**
+@brief The main, catch-all namespace for TEO.
+ */
+namespace teo {}
+
+/**
+ * \defgroup 2017-concurso-ferrovial_libraries 2017-concurso-ferrovial Libraries
+ *
+ * @brief 2017-concurso-ferrovial libraries.
+ *
+ */
+
+/**
+ * \defgroup 2017-concurso-ferrovial_programs 2017-concurso-ferrovial Programs
+ *
+ * @brief 2017-concurso-ferrovial programs.
+ */
+
+/**
+ * \defgroup 2017-concurso-ferrovial_applications 2017-concurso-ferrovial Applications (Collections of Programs)
+ *
+ * @brief 2017-concurso-ferrovial applications (collections of programs).
+ */
+
+/**
+ * \defgroup 2017-concurso-ferrovial_examples 2017-concurso-ferrovial Examples
+ *
+ * @brief 2017-concurso-ferrovial examples.
+ */
+
+
+
