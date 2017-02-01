@@ -20,9 +20,12 @@ class Robot(object):
     def turn_right(self, velocity=None):
         print('Turning right with velocity: {}'.format(velocity))
 
+    def stop(self):
+        print('Stopping robot')
+
     def read(self):
         """
         Read the robot's distance sensors
         :return: d_left, d_center, d_right
         """
-        return None, None, None
+        return 0, 0, 0
