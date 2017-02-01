@@ -18,7 +18,7 @@ class ExampleProgram : public yarp::os::RFModule {
     public:
         bool configure(yarp::os::ResourceFinder &rf);
 
-    protected:
+    private:
 
         virtual bool interruptModule();
         virtual double getPeriod();
