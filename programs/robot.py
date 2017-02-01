@@ -29,3 +29,4 @@ class Robot(object):
         :return: d_left, d_center, d_right
         """
         return 0, 0, 0
+
