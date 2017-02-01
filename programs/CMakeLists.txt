@@ -2,4 +2,4 @@
 # Authors: ASROB UC3M Team
 
 add_subdirectory(exampleProgram)
-
+add_subdirectory(QRDetection)

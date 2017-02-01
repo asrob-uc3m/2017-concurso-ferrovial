@@ -18,6 +18,7 @@ option(ENABLE_ExampleLibrary "Choose if you want to compile ExampleLibrary" TRUE
 
 ### options: cpp programs
 option(ENABLE_exampleProgram "Choose if you want to compile exampleProgram" TRUE)
+option(ENABLE_QRDetectionQRDetection "Choose if you want to compile QRDetection" TRUE)
 
 ### options: force default
 option(ENABLE_exampleExtraOption "Enable/disable option exampleExtraOption" TRUE)
