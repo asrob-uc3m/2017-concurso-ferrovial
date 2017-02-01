@@ -1,0 +1,17 @@
+<application>
+<name>2017-concurso-ferrovial App</name>
+
+    <module>
+        <name>yarpdev</name>
+        <parameters>--device OpenNI2DeviceServer --depthVideoMode 4 --colorVideoMode 9 --noRGBMirror --noDepthMirror</parameters>
+        <node>/ecro</node>
+    </module>
+
+    <!--module>
+        <name></name>
+        <parameters></parameters>
+        <node>localhost</node>
+    </module-->
+
+</application>
+
