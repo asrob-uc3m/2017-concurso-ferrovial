@@ -1,1 +1,1 @@
-yarpdev --device FakeWheelController
+yarpdev --device FakeMotorController
