@@ -40,7 +40,7 @@ def main():
             t.sleep(0.2)
 
         except KeyboardInterrupt:
-            robot.stop()
+            robot.stopMovement()
             robot.close()
             break
 
