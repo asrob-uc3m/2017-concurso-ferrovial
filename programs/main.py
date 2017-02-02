@@ -29,13 +29,13 @@ def main():
             d_left, d_center, d_right = robot.read()
 
             if d_center < center_threshold or (d_left < left_threshold and d_right < right_threshold):
-                robot.move_backwards()
+                robot.moveBackwards(1)
             elif d_left < left_threshold:
-                robot.turn_right()
+                robot.turnRight(1)
             elif d_right < right_threshold:
-                robot.turn_left()
+                robot.turnLeft(1)
             else:
-                robot.move_forward()
+                robot.moveForward(1)
 
             t.sleep(0.2)
 

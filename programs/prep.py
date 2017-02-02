@@ -24,25 +24,18 @@ def main():
 
     robot = rd.viewRdRobotManager(robotDevice)  # view the actual interface
 
-    while True:
-        try:
-            d_left, d_center, d_right = robot.read()
+    #######
+    try:
+        robot.moveForward(7)
+        robot.turnLeft(4)
+        robot.moveForward(7)
+        robot.turnRight(4)
+        robot.moveForward(7)
 
-            if d_center < center_threshold or (d_left < left_threshold and d_right < right_threshold):
-                robot.move_backwards()
-            elif d_left < left_threshold:
-                robot.turn_right()
-            elif d_right < right_threshold:
-                robot.turn_left()
-            else:
-                robot.move_forward()
-
-            t.sleep(0.2)
-
-        except KeyboardInterrupt:
-            robot.stopMovement()
-            robot.close()
-            break
+    except KeyboardInterrupt:
+        robot.stopMovement()
+        robot.close()
+        break
 
 
 if __name__ == '__main__':
