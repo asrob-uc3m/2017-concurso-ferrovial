@@ -2,17 +2,24 @@ import yarp
 
 yarp.Network.init()
 
-p = yarp.BufferedPortImageRgb()
-p.open("/python");
+p = yarp.Port()
+p.open("/depth:i");
 
-top = 100;
-for i in range(1,top):
-    img = p.prepare()
-    img.resize(320,240)
-    img.zero()
-    img.pixel(160,120).r = 255
-    p.write()
-    yarp.Time.delay(0.5)
+if yarp.Network.connect("/OpenNI2/depthFrame:o", "/depth:i") != True:
+    print "[error] Could not connect"
+    quit()
+
+while(1):
+
+    yarp_depth = yarp.ImageMono16()
+    p.read(yarp_depth)
+
+    puntoIzquierda = yarp_depth.getPixel(100,430)
+    puntoCentro = yarp_depth.getPixel(340,430)
+    puntoDerecha = yarp_depth.getPixel(580,430)
+
+    print str(puntoIzquierda) + " " + str(puntoCentro) + " " + str(puntoDerecha)
+
 p.close();
 
 yarp.Network.fini();
