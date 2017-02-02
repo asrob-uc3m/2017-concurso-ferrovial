@@ -34,11 +34,11 @@ def main():
 
     except KeyboardInterrupt:
         robot.stopMovement()
-        robot.close()
+        robotDevice.close()
 
     ######
     robot.stopMovement()
-    robot.close()
+    robotDevice.close()
 
 if __name__ == '__main__':
     main()
