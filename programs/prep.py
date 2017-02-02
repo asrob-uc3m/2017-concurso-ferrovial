@@ -26,11 +26,22 @@ def main():
 
     #######
     try:
-        robot.moveForward(7)
-        robot.turnLeft(4)
-        robot.moveForward(7)
-        robot.turnRight(4)
-        robot.moveForward(7)
+        robot.moveForward(20)
+        yarp.Time.delay(2)
+
+        robot.turnLeft(20)
+        yarp.Time.delay(0.5)
+
+        robot.moveForward(20)
+        yarp.Time.delay(2)
+
+        robot.turnRight(20)
+        yarp.Time.delay(0.5)
+
+        robot.moveForward(10)
+        yarp.Time.delay(1)
+
+        robot.stopMovement()
 
     except KeyboardInterrupt:
         robot.stopMovement()
