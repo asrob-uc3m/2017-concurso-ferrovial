@@ -32,10 +32,10 @@ def main():
         robot.turnRight(4)
         robot.moveForward(7)
 
-    except KeyboardInterrupt:
-        robot.stopMovement()
-        robot.close()
-        break
+        except KeyboardInterrupt:
+            robot.stopMovement()
+            robot.close()
+            break
 
     ######
     robot.stopMovement()
