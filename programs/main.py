@@ -41,7 +41,7 @@ def main():
 
         except KeyboardInterrupt:
             robot.stopMovement()
-            robot.close()
+            robotDevice.close()
             break
 
 
