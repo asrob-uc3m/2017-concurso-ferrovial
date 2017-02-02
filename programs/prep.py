@@ -26,20 +26,18 @@ def main():
 
     #######
     try:
-        robot.moveForward(20)
-        yarp.Time.delay(2)
-
-        robot.turnLeft(20)
-        yarp.Time.delay(0.5)
 
         robot.moveForward(20)
-        yarp.Time.delay(2)
+        yarp.Time.delay(3.3)  # 1 m
+
+        robot.stopMovement() # optional
+        yarp.Time.delay(0.1) 
 
         robot.turnRight(20)
-        yarp.Time.delay(0.5)
+        yarp.Time.delay(0.4)  # 90 degrees
 
-        robot.moveForward(10)
-        yarp.Time.delay(1)
+#        robot.turnLeft(20)
+#        yarp.Time.delay(0.4)  # 90 degrees
 
         robot.stopMovement()
 
