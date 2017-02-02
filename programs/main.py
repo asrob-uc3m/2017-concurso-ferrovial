@@ -1,14 +1,28 @@
-import time as t
-from robot import Robot
+#! /usr/bin/env python
 
+import time as t
+
+import yarp
+import rd
 
 def main():
+
     left_threshold = 0 #  Edit this with sensor values
     center_threshold = 0  # Edit this with sensor values
     right_threshold = 0  # Edit this with sensor values
 
-    robot = Robot()
-    robot.open()
+    yarp.Network.init()
+
+    if yarp.Network.checkNetwork() != True:
+        print "[error] Please try running yarp server"
+        quit()
+
+    robotOptions = yarp.Property()
+    robotOptions.put('device','RobotClient')
+    robotOptions.put('name','/RobotServer')
+    robotDevice = yarp.PolyDriver(robotOptions)  # calls open -> connects
+
+    robot = rd.viewRdRobotManager(robotDevice)  # view the actual interface
 
     while True:
         try:
@@ -33,3 +47,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
