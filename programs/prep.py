@@ -37,6 +37,9 @@ def main():
         robot.close()
         break
 
+    ######
+    robot.stopMovement()
+    robot.close()
 
 if __name__ == '__main__':
     main()
