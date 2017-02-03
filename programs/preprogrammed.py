@@ -28,13 +28,61 @@ def main():
     try:
 
         robot.moveForward(20)
-        yarp.Time.delay(3.3)  # 1 m
+        yarp.Time.delay(3.3)  # 1 m = 3.3
+
+        robot.stopMovement() # optional
+        yarp.Time.delay(0.1) 
+
+        robot.turnLeft(20)
+        yarp.Time.delay(0.2)  # 90 degrees
+
+        robot.moveForward(20)
+        yarp.Time.delay(3.3)  # 1 m = 3.3
 
         robot.stopMovement() # optional
         yarp.Time.delay(0.1) 
 
         robot.turnRight(20)
-        yarp.Time.delay(0.4)  # 90 degrees
+        yarp.Time.delay(0.2)  # 90 degrees
+
+        robot.stopMovement() # optional
+        yarp.Time.delay(0.1) 
+
+        robot.moveForward(20)
+        yarp.Time.delay(3.3)  # 1 m = 3.3
+
+        robot.stopMovement() # optional
+        yarp.Time.delay(0.1) 
+
+        robot.moveForward(20)
+        yarp.Time.delay(3.3)  # 1 m = 3.3
+
+        robot.stopMovement() # optional
+        yarp.Time.delay(0.1) 
+
+        robot.turnRight(20)
+        yarp.Time.delay(0.2)  # 90 degrees
+
+        robot.stopMovement() # optional
+        yarp.Time.delay(0.1) 
+
+        robot.moveForward(20)
+        yarp.Time.delay(3.3)  # 1 m = 3.3
+
+        robot.stopMovement() # optional
+        yarp.Time.delay(0.1) 
+
+ #       robot.turnLeft(20)
+ #       yarp.Time.delay(0.2)  # 90 degrees
+
+        robot.stopMovement() # optional
+        yarp.Time.delay(0.1) 
+
+        robot.moveForward(20)
+        yarp.Time.delay(3.3)  # 1 m = 3.3
+
+        robot.stopMovement() # optional
+        yarp.Time.delay(0.1) 
 
 #        robot.turnLeft(20)
 #        yarp.Time.delay(0.4)  # 90 degrees
