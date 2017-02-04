@@ -75,13 +75,13 @@ while(1):
             robot.turnLeft(20)
             yarp.Time.delay(0.2)  # 90 degrees
             robot.stopMovement() # optional
-    elif down_puntoCentro > 2000:
-            print "big left"
-            robot.turnLeft(20)
-            yarp.Time.delay(0.8)  # 90 degrees
-            robot.stopMovement() # optional
-            robot.moveForward(20)
-            yarp.Time.delay(0.2)  # 90 degrees
+#    elif down_puntoCentro > 2000:
+#            print "big left"
+#            robot.turnLeft(20)
+#            yarp.Time.delay(0.8)  # 90 degrees
+#            robot.stopMovement() # optional
+#            robot.moveForward(20)
+#            yarp.Time.delay(0.2)  # 90 degrees
     else:
             print "advance"
             robot.moveForward(20)
